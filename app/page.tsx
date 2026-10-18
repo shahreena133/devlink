@@ -260,7 +260,7 @@ useEffect(() => {
 {toast && (
   <div
     role="status"
-    className="fixed bottom-5 right-5 z-[100] flex items-center gap-3 rounded-xl border border-[#C4A995] bg-white px-5 py-4 text-sm font-medium text-[#6F5140] shadow-lg"
+    className="fixed bottom-5 right-5 z-100 flex items-center gap-3 rounded-xl border border-[#C4A995] bg-white px-5 py-4 text-sm font-medium text-[#6F5140] shadow-lg"
   >
     <span className="text-lg text-green-700">✓</span>
     <span>{toast}</span>

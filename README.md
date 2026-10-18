@@ -73,6 +73,4 @@ Project Scope
 
 DevLink is a frontend-only project. It does not use a backend, external database, or authentication system. Resource data is stored in the project, while bookmarks are saved in the browser using localStorage.
 
-Live Demo
-
-Add your deployed project URL here when it is available.
+Live Demo: https://devlink-ecru-nine.vercel.app/

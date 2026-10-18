@@ -1,36 +1,78 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+DevLink — Dynamic Developer Resource Hub
 
-## Getting Started
+DevLink is a developer resource directory that helps developers discover useful tools, libraries, APIs, icons, and AI tools in one place.
 
-First, run the development server:
+Features
 
-```bash
+* Resource Directory: Explore 12 developer resources across four categories.
+* Live Search: Find resources by title, description, or tags.
+* Category Filtering: Filter resources by UI Component Libraries, Backend / APIs, Icons & Assets, and AI Tools.
+* Bookmarks: Save favorite resources and access them later. Bookmarks persist using localStorage.
+* Saved Resources: View only your bookmarked resources.
+* Shareable URLs: Search terms and selected categories sync with URL query parameters.
+* Quick View Modal: View resource descriptions, pricing information, documentation links, installation commands, tags, and related tools.
+* Toast Notifications: Get a brief notification when adding or removing a bookmark.
+* Responsive Design: Use the resource directory across different screen sizes.
+
+Technologies Used
+
+* Next.js
+* React
+* TypeScript
+* Tailwind CSS
+* Browser localStorage
+
+Getting Started
+
+Prerequisites
+
+Make sure Node.js and npm are installed.
+
+Installation
+
+Clone the repository and open the project directory:
+
+git clone YOUR_GITHUB_REPOSITORY_URL
+cd devlink
+npm install
+
+Replace YOUR_GITHUB_REPOSITORY_URL with your actual repository URL.
+
+Run Locally
+
+Start the development server:
+
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open http://localhost:3000 in your browser.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Production Build
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+To check the production build, run:
 
-## Learn More
+npm run build
 
-To learn more about Next.js, take a look at the following resources:
+Project Structure
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+devlink/
+├── app/
+│   ├── page.tsx
+│   ├── layout.tsx
+│   └── globals.css
+├── components/
+│   ├── ResourceCard.tsx
+│   └── QuickViewModal.tsx
+├── data/
+│   └── resources.ts
+├── public/
+├── types.ts
+├── package.json
+└── README.md
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Project Scope
 
-## Deploy on Vercel
+DevLink is a frontend-only project. It does not use a backend, external database, or authentication system. Resource data is stored in the project, while bookmarks are saved in the browser using localStorage.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Live Demo
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Add your deployed project URL here when it is available.
